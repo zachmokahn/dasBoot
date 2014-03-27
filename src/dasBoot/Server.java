@@ -12,14 +12,14 @@ import dasBoot.Sockets.ServerSocket.iServerSocket;
 import dasBoot.Utils.iParser;
 
 public class Server {
-  private ArrayList<iController> controllers;
-  private iController[] allControllers;
-  private iServerSocket serverSocket;
-  private Handler handler;
-  private iRouter router;
-  private iFactory factory;
-  private iParser parser;
-  private String DIR = System.getProperty("user.dir");
+  protected ArrayList<iController> controllers;
+  protected iController[] allControllers;
+  protected iServerSocket serverSocket;
+  protected Handler handler;
+  protected iRouter router;
+  protected iFactory factory;
+  protected iParser parser;
+  protected String DIR = System.getProperty("user.dir");
 
   public Server(iServerSocket serverSocket) {
     controllers = new ArrayList<iController>();
