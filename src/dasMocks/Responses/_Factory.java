@@ -1,5 +1,6 @@
 package dasMocks.Responses;
 
+import dasBoot.Requests.iRequest;
 import dasBoot.Responses.iFactory;
 
 public class _Factory implements iFactory {
@@ -18,7 +19,7 @@ public class _Factory implements iFactory {
     return response;
   }
 
-  public _Response get() throws Exception {
+  public _Response get(iRequest request) throws Exception {
     _Response response = new _Response();
     response.stubCode("200");
     return response;

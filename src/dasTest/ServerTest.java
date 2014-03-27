@@ -1,7 +1,5 @@
 package dasTest;
 
-import java.io.File;
-import java.io.PrintWriter;
 import java.util.Hashtable;
 
 import org.junit.After;
