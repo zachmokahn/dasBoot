@@ -13,6 +13,10 @@ public class _Empfanger implements iServerSocket {
     listener = new _Volksempfanger();
   }
 
+  public void close() {
+    open = false;
+  }
+
   public void stubListener(iSocket listener) {
     this.listener = listener;
   }
