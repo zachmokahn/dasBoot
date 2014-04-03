@@ -1,5 +1,7 @@
 package dasMocks.Requests;
 
+import java.util.Hashtable;
+
 import dasBoot.Requests.iRequest;
 
 public class _Request implements iRequest {
@@ -14,6 +16,7 @@ public class _Request implements iRequest {
     this.uri = uri;
   }
 
+  public Hashtable<String, String> getBody() { return new Hashtable<String, String>();}
   public void stubURI(String uri) { this.uri = uri; }
   public void stubMethod(String method) { this.method = method; }
   public void stubVersion(String version) { this.version = version; }

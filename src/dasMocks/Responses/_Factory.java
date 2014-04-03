@@ -6,6 +6,12 @@ import dasBoot.Responses.iFactory;
 public class _Factory implements iFactory {
   public boolean fileWasNotFound = false;
 
+  public _Response get(String request) throws Exception {
+    _Response response = new _Response();
+    response.stubCode("200");
+    return response;
+  }
+
   public _Response FileNotFound() throws Exception {
     fileWasNotFound = true;
     _Response response = new _Response();
